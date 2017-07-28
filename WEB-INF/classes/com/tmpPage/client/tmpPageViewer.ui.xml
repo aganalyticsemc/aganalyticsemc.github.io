@@ -4,8 +4,7 @@
              xmlns:b.html="urn:import:org.gwtbootstrap3.client.ui.html"
              xmlns:b.gwt="urn:import:org.gwtbootstrap3.client.ui.gwt"
 	         xmlns:g="urn:import:com.google.gwt.user.client.ui">
-	<ui:style src="styleTmpPage.css" />
-	
+	<ui:style src="styleTmpPage.css" />	
 	<b:Container fluid="true" addStyleNames="{style.containerPageOne}">
 
 <!-- PAGE TITLE -->
@@ -24,8 +23,8 @@
 						<b:Icon type="FLAG" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" />
 					</b:Column>
 					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}">
-						<b:Heading size="H1" alignment="CENTER" text="22"/>
-						<b:Heading size="H5" alignment="CENTER" text="New alerts the past 3"/>
+						<b:Heading size="H1" alignment="CENTER" text="3"/>
+						<b:Heading size="H5" alignment="CENTER" text="New alerts the past 7 days"/>
 					</b:Column>
 					</b:Row>
 				</b:Well>
@@ -37,8 +36,8 @@
 						<b:Icon type="WARNING" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" />
 					</b:Column>
 					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}">
-						<b:Heading size="H1" alignment="CENTER" text="15"/>
-						<b:Heading size="H5" alignment="CENTER" text="Open Alerts"/>
+						<b:Heading size="H1" alignment="CENTER" text="11"/>
+						<b:Heading size="H5" alignment="CENTER" text="Unhandled Alerts"/>
 					</b:Column>
 					</b:Row>
 				</b:Well>
@@ -50,7 +49,7 @@
 						<b:Icon type="CHECK" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" />
 					</b:Column>
 					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}">
-						<b:Heading size="H1" alignment="CENTER" text="32"/>
+						<b:Heading size="H1" alignment="CENTER" text="3"/>
 						<b:Heading size="H5" alignment="CENTER" text="Alerts handled past 7 days"/>
 					</b:Column>
 					</b:Row>
@@ -153,140 +152,141 @@
 
 				<b:Row>
 					<b:Column size = "SM_8">
-						<b:Panel >						
+						<b:Panel type="PRIMARY" addStyleNames="{style.panelStyle}">
+						<b:PanelHeader>
+							<b:Heading size="H3">
+								<b:Anchor text="Targets"/>
+								<b:Anchor pull="RIGHT" dataToggle="COLLAPSE" dataTarget="#TargetPanelCollapse" icon="WINDOW_MINIMIZE" ui:field="icon_up_down"/>
+							</b:Heading>
+						</b:PanelHeader>
+						<b:PanelCollapse b:id="TargetPanelCollapse" in="true" ui:field="collapseOne">											
 							<b:PanelBody>							
-								
-<!-- 								<b:Breadcrumbs pull="RIGHT"> -->
-<!-- 								  <b:AnchorListItem text="This week"/> -->
-<!-- 								  <b:AnchorListItem text="This month"/> -->
-<!-- 								  <b:AnchorListItem text="This year"/> -->
-<!-- 								</b:Breadcrumbs> -->
-								<b:Heading size="H3" text="Targets"/>
-									<b:Heading size="H5" text="Target bar #1">
-									  <b:Icon type="CHECK" pull="RIGHT" size="LARGE"/>
+								<b:Row >
+<!-- 									<b:Breadcrumbs addStyleNames="{style.panelBreadcrumbs}"> -->
+<!-- 									  <b:AnchorListItem text="Weekly" ui:field="WeeklyTarget" active="true" addStyleNames="{style.panelBreadcrumbsItem}"/> -->
+<!-- 									  <b:AnchorListItem text="Monthly" ui:field="MonthlyTarget" addStyleNames="{style.panelBreadcrumbsItem}"/> -->
+<!-- 									  <b:AnchorListItem text="Annually" ui:field="AnnuallyTarget" addStyleNames="{style.panelBreadcrumbsItem}"/> -->
+<!-- 									</b:Breadcrumbs> -->
+									<b:NavTabs>
+										<b:TabListItem text="Weekly" ui:field="WeeklyTarget" active="true" addStyleNames="{style.panelBreadcrumbsItem}"/>
+										<b:TabListItem text="Monthly" ui:field="MonthlyTarget" addStyleNames="{style.panelBreadcrumbsItem}"/>
+										<b:TabListItem text="Annually" ui:field="AnnuallyTarget" addStyleNames="{style.panelBreadcrumbsItem}"/>
+									</b:NavTabs>								
+								</b:Row >								
+									<b:Heading size="H5" text="Customer Retained" addStyleNames="{style.noHoverOrLink}">					
+									  <b:Anchor text="15 / 15" pull="RIGHT" icon="CHECK" iconPosition="RIGHT" addStyleNames="{style.noHoverOrLink}" ui:field="targetBar1Text"/>
 									</b:Heading>
 									<b:Progress>								
-										<b:ProgressBar type="SUCCESS" percent="100" text="100 / 100"/>										
+										<b:ProgressBar type="SUCCESS" percent="100" ui:field="targetBar1"/>										
 									</b:Progress>															
-									<b:Heading size="H5" text="Target bar #2">
-<!-- 									  <b:Icon type="THUMBS_UP" pull="RIGHT" size="LARGE"/> -->
+									<b:Heading size="H5" text="Alerts Handled" addStyleNames="{style.noHoverOrLink}" >
+										<b:Anchor  text="17 / 20" pull="RIGHT" addStyleNames="{style.noHoverOrLink}" ui:field="targetBar2Text"/>
 									</b:Heading>
 									<b:Progress>								
-										<b:ProgressBar type="SUCCESS" percent="85" text="130 / 150"/>
+										<b:ProgressBar type="SUCCESS" percent="85" ui:field="targetBar2"/>
 									</b:Progress>
-									<b:Heading size="H5" text="Target bar #3">
-									  <b:Icon type="WARNING" pull="RIGHT" size="LARGE"/>
+									<b:Heading size="H5" text="Urgent Alerts Handled" addStyleNames="{style.noHoverOrLink}" >
+									  <b:Anchor text="2 / 10" pull="RIGHT"  addStyleNames="{style.noHoverOrLink}" ui:field="targetBar3Text"/>
 									</b:Heading>
 									<b:Progress>								
-										<b:ProgressBar type="DANGER" percent="20" text="4 / 20"/>
+										<b:ProgressBar type="WARNING" percent="25" ui:field="targetBar3"/>
 									</b:Progress>
-									<b:Heading size="H5" text="Target bar #4">
-<!-- 									  <b:Icon type="WARNING" pull="RIGHT" size="LARGE"/> -->
+									<b:Heading size="H5" text="High Attention Alert Handled" addStyleNames="{style.noHoverOrLink}" >
+										<b:Anchor text="1 / 5" pull="RIGHT" icon="WARNING" iconPosition="RIGHT" addStyleNames="{style.noHoverOrLink}" ui:field="targetBar4Text"/>	
 									</b:Heading>
-									<b:Progress>								
-										<b:ProgressBar type="WARNING" percent="45" text="32 / 70"/>
-									</b:Progress>
+								<b:Progress>								
+									<b:ProgressBar type="WARNING" percent="20" ui:field="targetBar4"/>
+								</b:Progress>
 <!-- 									<b:Heading size="H5" text="Target bar #5"/>	 -->
 <!-- 									<b:Progress>								 -->
 <!-- 										<b:ProgressBar type="SUCCESS" percent="87" text="32 / 70"/> -->
 <!-- 									</b:Progress>																																						 -->
-							</b:PanelBody>														
+							</b:PanelBody>
+							</b:PanelCollapse>																
 						</b:Panel>
 					</b:Column>
+					
+<!-- 					LEFT MID PANEL -->
 					<b:Column size = "SM_4">
-						<b:Panel >						
-							<b:PanelBody>	
-
-							
-							
-													
-								<b:Heading size="H4" text="4 Most Important Alerts with Recommended Actions"/>
+						<b:Panel type="PRIMARY" addStyleNames="{style.panelStyle}">
+						<b:PanelHeader>
+							<b:Heading size="H3">
+								<b:Anchor text="Top 5 Recommended Alerts"/>
+								<b:Anchor pull="RIGHT" dataToggle="COLLAPSE" dataTarget="#top5PanelCollapse" icon="WINDOW_MINIMIZE" ui:field="icon_up_down_top5"/>
+							</b:Heading>
+						</b:PanelHeader>
+						<b:PanelCollapse b:id="top5PanelCollapse" in="true" ui:field="collapseTop5">
+							<b:PanelBody>											
 								<b:MediaList>
 									<b:ListItem >
 										<b:Icon type="USER" pull="LEFT" size="TIMES3"/>
 										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
-											<b:Heading size="H4" text="Customer #1"/>
-											<b.html:Paragraph>Recommended action: Call</b.html:Paragraph>
-										</b:MediaBody>
-									</b:ListItem>
-									<b:ListItem >
-										<b:Icon type="USER" pull="LEFT" size="TIMES3"/>
-										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
-											<b:Heading size="H4" text="Customer #1"/>
-											<b.html:Paragraph>Recommended action: Send Personal Email with Gift Card</b.html:Paragraph>
-										</b:MediaBody>
-									</b:ListItem>
-									<b:ListItem >
-										<b:Icon type="USER" pull="LEFT" size="TIMES3"/>
-										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
-											<b:Heading size="H4" text="Customer #1"/>
-											<b.html:Paragraph>Recommended action: Call</b.html:Paragraph>
-										</b:MediaBody>
-									</b:ListItem>
-									<b:ListItem >
-										<b:Icon type="USER" pull="LEFT" size="TIMES3"/>
-										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
-											<b:Heading size="H4" text="Customer #1"/>
-											<b.html:Paragraph>Recommended action: Call</b.html:Paragraph>
-										</b:MediaBody>
-									</b:ListItem>
-<!-- 									<b:ListItem > -->
-<!-- 										<b:Icon type="USER" pull="LEFT" size="TIMES3"/> -->
-<!-- 										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}"> -->
-<!-- 											<b:Heading size="H5" text="Customer #1"/> -->
+											<b:Heading size="H4" text="Sundbyoster Skolefritidshjem" />
+											<b:Heading size="H5" >
+												<b:Anchor text="Recommended Action: " addStyleNames="{style.noHoverOrLink}"/>
+												<b:Tooltip placement="BOTTOM">
+													<b:Anchor icon="PHONE" iconPosition="LEFT" title="Make a personal call" iconSize="LARGE" addStyleNames="{style.noHoverOrLink}"/>
+												</b:Tooltip>
+											</b:Heading>
 <!-- 											<b.html:Paragraph>Recommended action: Call</b.html:Paragraph> -->
-<!-- 										</b:MediaBody> -->
-<!-- 									</b:ListItem>																																																			 -->
+										</b:MediaBody>
+									</b:ListItem>
+									<b:ListItem >
+										<b:Icon type="USER" pull="LEFT" size="TIMES3"/>
+										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
+											<b:Heading size="H4" text="JNF Momentum Koge A/S" />
+											<b:Heading size="H5" >
+												<b:Anchor text="Recommended Action: " addStyleNames="{style.noHoverOrLink}"/>
+												<b:Tooltip placement="BOTTOM">
+													<b:Anchor icon="PHONE" iconPosition="LEFT" title="Make a personal call" iconSize="LARGE" addStyleNames="{style.noHoverOrLink}"/>
+												</b:Tooltip>
+											</b:Heading>
+										</b:MediaBody>
+									</b:ListItem>
+									<b:ListItem >
+										<b:Icon type="USER" pull="LEFT" size="TIMES3"/>
+										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
+											<b:Heading size="H4" text="Master International" />
+											<b:Heading size="H5" >
+												<b:Anchor text="Recommended Action: " addStyleNames="{style.noHoverOrLink}"/>
+												<b:Tooltip placement="BOTTOM">
+													<b:Anchor icon="PHONE" iconPosition="LEFT" title="Make a personal call" iconSize="LARGE" addStyleNames="{style.noHoverOrLink}"/>
+												</b:Tooltip>
+											</b:Heading>
+										</b:MediaBody>
+									</b:ListItem>
+									<b:ListItem >
+										<b:Icon type="USER" pull="LEFT" size="TIMES3"/>
+										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
+											<b:Heading size="H4" text="Sydkystens Kranservice ApS" />
+											<b:Heading size="H5" >
+												<b:Anchor text="Recommended Action: " addStyleNames="{style.noHoverOrLink}"/>
+												<b:Tooltip placement="BOTTOM">
+													<b:Anchor icon="PHONE" iconPosition="LEFT" title="Make a personal call" iconSize="LARGE" addStyleNames="{style.noHoverOrLink}"/>
+												</b:Tooltip>
+											</b:Heading>
+										</b:MediaBody>
+									</b:ListItem>
+									<b:ListItem >
+										<b:Icon type="USER" pull="LEFT" size="TIMES3"/>
+										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
+											<b:Heading size="H4" text="CF ApS" />
+											<b:Heading size="H5" >
+												<b:Anchor text="Recommended Action: " addStyleNames="{style.noHoverOrLink}"/>
+												<b:Tooltip placement="BOTTOM">
+													<b:Anchor icon="GIFT" iconPosition="LEFT" title="Send a giftcard by Email" iconSize="LARGE" addStyleNames="{style.noHoverOrLink}"/>
+												</b:Tooltip>
+											</b:Heading>	
+										</b:MediaBody>
+									</b:ListItem>									
 								</b:MediaList>
-																																	
-							</b:PanelBody>														
+							</b:PanelBody>
+							</b:PanelCollapse>
+<!-- 							</b:Collapse>														 -->
 						</b:Panel>
 					</b:Column>					
 				</b:Row>
-				
-<!-- 				LOWER PANEL -->
-				<b:Row addStyleNames="{style.column}">	
-				<b:Column size = "SM_12" >
-				<b:Panel>
-<!-- 					<b:PanelHeader addStyleNames="{style.dataTableHeader}"> -->
-<!-- 						<b:Heading size="H3" text="Table of alerts"/> -->
-<!-- 					</b:PanelHeader> -->
-					<b:PanelBody>
-						<b:Heading alignment="LEFT" size="H3" text="Table of Alerts"/>
-						<b:Row/>
-						<b:NavTabs addStyleNames="{style.dataTableNavTabs}">
-							<b:ListDropDown>
-								<b:AnchorButton active="true" dataToggle="DROPDOWN" text="Attention Level"/>
-									<b:DropDownMenu>
-										<b:AnchorListItem>Urgent</b:AnchorListItem>
-										<b:AnchorListItem>High</b:AnchorListItem>
-										<b:AnchorListItem>Low</b:AnchorListItem>
-									</b:DropDownMenu>								
-							</b:ListDropDown>
-							<b:ListDropDown>
-								<b:AnchorButton dataToggle="DROPDOWN" text="Segment"/>
-									<b:DropDownMenu>
-										<b:AnchorListItem>Primary</b:AnchorListItem>
-										<b:AnchorListItem>Secondary</b:AnchorListItem>
-										<b:AnchorListItem>Tertiary</b:AnchorListItem>
-									</b:DropDownMenu>								
-							</b:ListDropDown>
-							<b:AnchorListItem icon="FILE_EXCEL_O" pull="RIGHT"></b:AnchorListItem>
-							<b:AnchorListItem icon="PRINT" pull="RIGHT"></b:AnchorListItem>
-							<b:AnchorListItem icon="FILE_PDF_O" pull="RIGHT"></b:AnchorListItem>
-						    <b:NavbarForm pull="RIGHT">
-						      <b:TextBox placeholder="Search Company Name..."/>
-						    </b:NavbarForm>
-						    						    			
-						</b:NavTabs>					
-                    <b.gwt:DataGrid bordered="false" condensed="true" striped="false" hover="true" height="500px"
-                                    width="100%" ui:field="dataGrid" addStyleNames="{style.dataTableContent}" />
-                    <b:Pagination ui:field="dataGridPagination"/>					
-					</b:PanelBody>
-				</b:Panel>
-						
-			</b:Column>
-		</b:Row>
+
 	</b:Container>				
 
 

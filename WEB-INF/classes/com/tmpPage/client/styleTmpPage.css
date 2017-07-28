@@ -1,8 +1,6 @@
 @CHARSET "ISO-8859-1";
 
-body {
-	background-color:rgba(0,0,0,0.1);
-}
+
 
 .column{
 /* 	border:1px solid red; */
@@ -11,6 +9,10 @@ body {
 .containerPageOne{
 	margin-top:8em;
 /* 	border:1px solid green; */
+}
+
+.containerSimpleTable{
+	
 }
 
 .upperPanel {
@@ -49,7 +51,7 @@ body {
 }
 
 .dataTableNavTabs{
-	background-color:rgba(0,0,0,0.07);
+/* 	background-color:rgba(0,0,0,0.07); */
 }
 
 .dataTableHeader{
@@ -78,8 +80,9 @@ body {
 }
 
 .topUrgentMidPanel:hover {
-	background:rgba(0,0,0,0.1);
-	cursor:pointer;
+  background: rgba(80, 188, 255, 0.2);
+  font-weight: bold;
+  cursor:pointer;
 }
 
 .top3Panel{
@@ -118,4 +121,26 @@ body {
 .iconInWell{
 	margin-top:25px;
 /* 	border:1px solid black; */
+}
+
+.panelStyle{
+	border-radius:0;
+	border:0;
+}
+
+.panelBreadcrumbs{
+	background:white;
+}
+
+.panelBreadcrumbsItem:active{
+/* 	font-weight:bold !important; */
+}
+
+.noHoverOrLink{
+	color:black;
+}
+.noHoverOrLink:hover{
+	color:black;
+	text-decoration:none;
+	cursor:default;
 }
