@@ -32,3 +32,15 @@
 .subMenuIcon a{
 	font-size:2em;
 }
+
+.dropMenuNavBar{
+	background:rgba(80,188,255,1);
+}
+
+.dropMenuNavBar a{
+	color:black;
+}
+
+.dropMenuNavBarItem a{
+	color:black;
+}

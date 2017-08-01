@@ -93,6 +93,7 @@
 .upperWell{
 	padding:0;
 	background:rgba(255,255,255,1);
+	border-top:2px solid rgba(0,0,0,0.2);
 /* 	border:1px solid red; */
 }
 
@@ -128,6 +129,15 @@
 	border:0;
 }
 
+.panelHeaderStyle{
+	color:rgba(0,0,0,0.7) !important;
+	font-weight:bold !important;
+}
+
+.panelHeaderStyle:hover{
+	text-decoration:none;
+}
+
 .panelBreadcrumbs{
 	background:white;
 }
@@ -137,7 +147,7 @@
 }
 
 .noHoverOrLink{
-	color:black;
+	color:rgba(0,0,0,0.7) !important;
 }
 .noHoverOrLink:hover{
 	color:black;

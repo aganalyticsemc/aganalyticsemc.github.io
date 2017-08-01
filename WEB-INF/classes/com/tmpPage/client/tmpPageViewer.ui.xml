@@ -10,7 +10,7 @@
 <!-- PAGE TITLE -->
 		<b:Row addStyleNames="{style.column}">
 			<b:Column size = "SM_12">
-				<b:Heading size="H1" alignment="LEFT" text="Alert Page"/>
+				<b:Heading size="H1" alignment="LEFT" text="Alert List"/>
 			</b:Column> 
 		</b:Row>	
 		
@@ -152,10 +152,10 @@
 
 				<b:Row>
 					<b:Column size = "SM_8">
-						<b:Panel type="PRIMARY" addStyleNames="{style.panelStyle}">
+						<b:Panel type="DEFAULT" addStyleNames="{style.panelStyle}">
 						<b:PanelHeader>
 							<b:Heading size="H3">
-								<b:Anchor text="Targets"/>
+								<b:Anchor text="Targets" dataToggle="COLLAPSE" dataTarget="#TargetPanelCollapse" addStyleNames="{style.panelHeaderStyle}"/>
 								<b:Anchor pull="RIGHT" dataToggle="COLLAPSE" dataTarget="#TargetPanelCollapse" icon="WINDOW_MINIMIZE" ui:field="icon_up_down"/>
 							</b:Heading>
 						</b:PanelHeader>
@@ -208,10 +208,10 @@
 					
 <!-- 					LEFT MID PANEL -->
 					<b:Column size = "SM_4">
-						<b:Panel type="PRIMARY" addStyleNames="{style.panelStyle}">
-						<b:PanelHeader>
+						<b:Panel type="DEFAULT" addStyleNames="{style.panelStyle}">
+						<b:PanelHeader addStyleNames="{style.panelHeaderStyle}">
 							<b:Heading size="H3">
-								<b:Anchor text="Top 5 Recommended Alerts"/>
+								<b:Anchor text="Top 5 Recommended Alerts" dataToggle="COLLAPSE" dataTarget="#top5PanelCollapse" addStyleNames="{style.panelHeaderStyle}"/>
 								<b:Anchor pull="RIGHT" dataToggle="COLLAPSE" dataTarget="#top5PanelCollapse" icon="WINDOW_MINIMIZE" ui:field="icon_up_down_top5"/>
 							</b:Heading>
 						</b:PanelHeader>

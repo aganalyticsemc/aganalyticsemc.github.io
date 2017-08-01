@@ -18,7 +18,9 @@
   <!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>     -->
 
   <!-- Other module inherits                                      -->
-  <inherits name="org.gwtbootstrap3.GwtBootstrap3Theme"/>                              -->
+  <inherits name="org.gwtbootstrap3.GwtBootstrap3Theme"/>                             
+  
+  
 <!--  <inherits name="com.google.gwt.libideas.StyleInjector"/> -->
   <!-- Specify the app entry point class.                         -->
   <entry-point class='com.tmpPage.client.TmpPageDashboard'/>
@@ -29,10 +31,13 @@
   <source path='shared'>
   </source>
   
+  
+<!--   Customized bootstrap CSS-file. Is injected after the gwtbootstrap3 CSS-files -->
   <stylesheet src="bootstrap.css"/>
   <stylesheet src="bootstrap-theme.css"/>
-  <stylesheet src="tableStyle.css"/>
-<!--   <stylesheet src="bootstrap/css/bootstrap.css"/> -->
+<!--   Custom CSS for table of alerts -->
+  <stylesheet src="tableStyle.css"/> 
+
   
 
 

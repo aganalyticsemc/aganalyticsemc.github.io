@@ -11,9 +11,9 @@
 					<b:Column size="LG_12,MD_12,SM_12,XS_12" addStyleNames="{style.menuItem}">						
 							<b:NavbarCollapseButton dataTarget="#navbar-collapse"/>
 								<b:NavbarNav>
-									<b:AnchorListItem text="Department 1"/>
-									<b:AnchorListItem addStyleNames="{style.menuItemActive}" text="Department 2"/>
-									<b:AnchorListItem text="Department 3" />
+									<b:AnchorListItem addStyleNames="{style.menuItemActive}" text="Lomax"/>
+<!-- 									<b:AnchorListItem addStyleNames="{style.menuItemActive}" text="Department 2"/> -->
+<!-- 									<b:AnchorListItem text="Department 3" /> -->
 								</b:NavbarNav>								
 								<b:NavbarBrand pull="RIGHT">
 									ag analytics
@@ -23,14 +23,22 @@
 				<b:Row addStyleNames="{style.subNavBar}">
 					<b:Column size="LG_12,MD_12" addStyleNames="{style.subMenuItem}">
 							<b:NavbarNav>
-								<b:AnchorListItem icon="HOME" text="Overview"/>
-								<b:AnchorListItem icon="DASHBOARD" text="Ranking"/>
-								<b:AnchorListItem icon="BAR_CHART" text="Drivers"/>
-								<b:AnchorListItem icon="WARNING" addStyleNames="{style.menuItemActive}" text="Alerts"/>
+								<b:AnchorListItem icon="HOME" text="Overview" enabled="false"/>
+								<b:AnchorListItem icon="DASHBOARD" text="Ranking" enabled="false"/>
+								<b:AnchorListItem icon="BAR_CHART" text="Drivers" enabled="false"/>
+								<b:AnchorListItem icon="WARNING" text="Alerts" addStyleNames="{style.menuItemActive}"/>
+<!-- 								<b:ListDropDown> -->
+<!-- 									<b:AnchorButton dataToggle="DROPDOWN" icon="WARNING" text="Alerts" /> -->
+<!-- 									<b:DropDownMenu addStyleNames="{style.dropMenuNavBar}"> -->
+<!-- 										<b:AnchorListItem icon="LIST_OL" text="Alert List (Sales Employee page)" addStyleNames="{style.dropMenuNavBarItem}"/> -->
+<!-- 										<b:AnchorListItem icon="LINE_CHART" text="Alert Handling (Sales Manager page)" addStyleNames="{style.dropMenuNavBarItem}"/> -->
+<!-- 									</b:DropDownMenu> -->
+<!-- 								</b:ListDropDown> -->
+<!-- 								<b:AnchorListItem icon="WARNING" addStyleNames="{style.menuItemActive}" text="Alerts"/> -->
 							</b:NavbarNav>
 							<b:NavbarNav pull="RIGHT">
-								<b:AnchorListItem icon="USER" iconPosition="RIGHT" text="User Name"/>
-								<b:AnchorListItem icon="SIGN_OUT" iconPosition="RIGHT" text="Sign Out"/>							
+								<b:AnchorListItem icon="USER" iconPosition="RIGHT" text="User Name" enabled="false"/>
+								<b:AnchorListItem icon="SIGN_OUT" iconPosition="RIGHT" text="Sign Out" enabled="false"/>							
 							</b:NavbarNav>								
 					</b:Column>	
 				</b:Row>	
