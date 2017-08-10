@@ -85,6 +85,25 @@
   cursor:pointer;
 }
 
+.topUrgentActionIcon{
+	color:#48baff;
+}
+
+.topUrgentMidPanelRowHeader{
+	font-weight: bold;
+}
+
+.topUrgentMidPanelRowContent{
+	color:rgba(0,0,0,0.7) !important;
+	font-style:italic;
+}
+
+.topUrgentMidPanelRowContent:hover{
+	color:rgba(0,0,0,0.7);
+	text-decoration:none;
+	cursor:default;
+}
+
 .top3Panel{
 /* 	padding-bottom:50px; */
 	border:0px solid black;
@@ -96,6 +115,8 @@
 	border-top:2px solid rgba(0,0,0,0.2);
 /* 	border:1px solid red; */
 }
+
+
 
 .leftBoxInWell{
 /* 	border:1px solid black; */
@@ -150,11 +171,34 @@
 	color:rgba(0,0,0,0.7) !important;
 }
 .noHoverOrLink:hover{
-	color:black;
+	color:rgba(0,0,0,0.7);
 	text-decoration:none;
 	cursor:default;
 }
 
 .addBorder{
 	border:1px solid black;
+}
+
+.headerUpperWell{
+	color:rgba(0,0,0,0.4);
+
+}
+
+.headerUpperWell:hover{
+	color:rgba(0,0,0,0.4);
+	text-decoration:none;
+	cursor:default;
+}
+
+
+.textUpperWell{
+	color:#48baff;
+	font-weight:bold;
+	font-size:2em;
+}
+.textUpperWell:hover{
+	color:#48baff;
+    text-decoration:none;
+    cursor:default;
 }

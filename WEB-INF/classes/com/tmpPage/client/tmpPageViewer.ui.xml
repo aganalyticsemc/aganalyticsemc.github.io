@@ -14,61 +14,104 @@
 			</b:Column> 
 		</b:Row>	
 		
-		
 		<b:Row>
-			<b:Column size="SM_3" >
+			<b:Column size="SM_3">
 				<b:Well addStyleNames="{style.upperWell}">
-					<b:Row addStyleNames="{style.insideWell}">
-					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}">
-						<b:Icon type="FLAG" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" />
-					</b:Column>
-					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}">
-						<b:Heading size="H1" alignment="CENTER" text="3"/>
-						<b:Heading size="H5" alignment="CENTER" text="New alerts the past 7 days"/>
-					</b:Column>
-					</b:Row>
+					<b:Heading size="H5" alignment="CENTER">
+						<b:Anchor text="New Alerts (past 7 days)" icon="FLAG" iconSize="LARGE" addStyleNames="{style.headerUpperWell}"/>
+					</b:Heading>
+					<b:Heading size="H1" alignment="CENTER">
+						<b:Anchor text="3" addStyleNames="{style.textUpperWell}"/>
+					</b:Heading>
 				</b:Well>
 			</b:Column>
-			<b:Column size="SM_3" >
+			<b:Column size="SM_3">
 				<b:Well addStyleNames="{style.upperWell}">
-					<b:Row addStyleNames="{style.insideWell}">
-					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}">
-						<b:Icon type="WARNING" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" />
-					</b:Column>
-					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}">
-						<b:Heading size="H1" alignment="CENTER" text="11"/>
-						<b:Heading size="H5" alignment="CENTER" text="Unhandled Alerts"/>
-					</b:Column>
-					</b:Row>
+					<b:Heading size="H5" alignment="CENTER">
+						<b:Anchor text="Unhandled Alerts" icon="WARNING" iconSize="LARGE" addStyleNames="{style.headerUpperWell}"/>
+					</b:Heading>
+					<b:Heading size="H1" alignment="CENTER">
+						<b:Anchor text="11" addStyleNames="{style.textUpperWell}"/>
+					</b:Heading>
 				</b:Well>
 			</b:Column>
-			<b:Column size="SM_3" >
+			<b:Column size="SM_3">
 				<b:Well addStyleNames="{style.upperWell}">
-					<b:Row addStyleNames="{style.insideWell}">
-					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}">
-						<b:Icon type="CHECK" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" />
-					</b:Column>
-					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}">
-						<b:Heading size="H1" alignment="CENTER" text="3"/>
-						<b:Heading size="H5" alignment="CENTER" text="Alerts handled past 7 days"/>
-					</b:Column>
-					</b:Row>
+					<b:Heading size="H5" alignment="CENTER">
+						<b:Anchor text="Alerts Handled (past 7 days)" icon="CHECK" iconSize="LARGE" addStyleNames="{style.headerUpperWell}"/>
+					</b:Heading>
+					<b:Heading size="H1" alignment="CENTER">
+						<b:Anchor text="3" addStyleNames="{style.textUpperWell}"/>
+					</b:Heading>
 				</b:Well>
 			</b:Column>
-			<b:Column size="SM_3" >
+			<b:Column size="SM_3">
 				<b:Well addStyleNames="{style.upperWell}">
-					<b:Row addStyleNames="{style.insideWell}">
-					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}">
-						<b:Icon type="THUMBS_UP" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" />
-					</b:Column>
-					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}">
-						<b:Heading size="H1" alignment="CENTER" text="69"/>
-						<b:Heading size="H5" alignment="CENTER" text="Customers retained past 30 days"/>
-					</b:Column>
-					</b:Row>
+					<b:Heading size="H5" alignment="CENTER">
+						<b:Anchor text="Customers Retained (past 30 days)" icon="THUMBS_UP" iconSize="LARGE" addStyleNames="{style.headerUpperWell}"/>
+					</b:Heading>
+					<b:Heading size="H1" alignment="CENTER">
+						<b:Anchor text="51" addStyleNames="{style.textUpperWell}"/>
+					</b:Heading>
 				</b:Well>
-			</b:Column>									
+			</b:Column>											
 		</b:Row>
+		
+<!-- 		LEGACY -->
+<!-- 		<b:Row> -->
+<!-- 			<b:Column size="SM_3" > -->
+<!-- 				<b:Well addStyleNames="{style.upperWell}"> -->
+<!-- 					<b:Row addStyleNames="{style.insideWell}"> -->
+<!-- 					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}"> -->
+<!-- 						<b:Icon type="FLAG" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" /> -->
+<!-- 					</b:Column> -->
+<!-- 					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}"> -->
+<!-- 						<b:Heading size="H1" alignment="CENTER" text="3"/> -->
+<!-- 						<b:Heading size="H5" alignment="CENTER" text="New alerts the past 7 days"/> -->
+<!-- 					</b:Column> -->
+<!-- 					</b:Row> -->
+<!-- 				</b:Well> -->
+<!-- 			</b:Column> -->
+<!-- 			<b:Column size="SM_3" > -->
+<!-- 				<b:Well addStyleNames="{style.upperWell}"> -->
+<!-- 					<b:Row addStyleNames="{style.insideWell}"> -->
+<!-- 					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}"> -->
+<!-- 						<b:Icon type="WARNING" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" /> -->
+<!-- 					</b:Column> -->
+<!-- 					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}"> -->
+<!-- 						<b:Heading size="H1" alignment="CENTER" text="11"/> -->
+<!-- 						<b:Heading size="H5" alignment="CENTER" text="Unhandled Alerts"/> -->
+<!-- 					</b:Column> -->
+<!-- 					</b:Row> -->
+<!-- 				</b:Well> -->
+<!-- 			</b:Column> -->
+<!-- 			<b:Column size="SM_3" > -->
+<!-- 				<b:Well addStyleNames="{style.upperWell}"> -->
+<!-- 					<b:Row addStyleNames="{style.insideWell}"> -->
+<!-- 					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}"> -->
+<!-- 						<b:Icon type="CHECK" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" /> -->
+<!-- 					</b:Column> -->
+<!-- 					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}"> -->
+<!-- 						<b:Heading size="H1" alignment="CENTER" text="3"/> -->
+<!-- 						<b:Heading size="H5" alignment="CENTER" text="Alerts handled past 7 days"/> -->
+<!-- 					</b:Column> -->
+<!-- 					</b:Row> -->
+<!-- 				</b:Well> -->
+<!-- 			</b:Column> -->
+<!-- 			<b:Column size="SM_3" > -->
+<!-- 				<b:Well addStyleNames="{style.upperWell}"> -->
+<!-- 					<b:Row addStyleNames="{style.insideWell}"> -->
+<!-- 					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}"> -->
+<!-- 						<b:Icon type="THUMBS_UP" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" /> -->
+<!-- 					</b:Column> -->
+<!-- 					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}"> -->
+<!-- 						<b:Heading size="H1" alignment="CENTER" text="69"/> -->
+<!-- 						<b:Heading size="H5" alignment="CENTER" text="Customers retained past 30 days"/> -->
+<!-- 					</b:Column> -->
+<!-- 					</b:Row> -->
+<!-- 				</b:Well> -->
+<!-- 			</b:Column>									 -->
+<!-- 		</b:Row> -->
 
 		
 	<!-- 				UPPER PART -->	
@@ -162,11 +205,6 @@
 						<b:PanelCollapse b:id="TargetPanelCollapse" in="true" ui:field="collapseOne">											
 							<b:PanelBody>							
 								<b:Row >
-<!-- 									<b:Breadcrumbs addStyleNames="{style.panelBreadcrumbs}"> -->
-<!-- 									  <b:AnchorListItem text="Weekly" ui:field="WeeklyTarget" active="true" addStyleNames="{style.panelBreadcrumbsItem}"/> -->
-<!-- 									  <b:AnchorListItem text="Monthly" ui:field="MonthlyTarget" addStyleNames="{style.panelBreadcrumbsItem}"/> -->
-<!-- 									  <b:AnchorListItem text="Annually" ui:field="AnnuallyTarget" addStyleNames="{style.panelBreadcrumbsItem}"/> -->
-<!-- 									</b:Breadcrumbs> -->
 									<b:NavTabs>
 										<b:TabListItem text="Weekly" ui:field="WeeklyTarget" active="true" addStyleNames="{style.panelBreadcrumbsItem}"/>
 										<b:TabListItem text="Monthly" ui:field="MonthlyTarget" addStyleNames="{style.panelBreadcrumbsItem}"/>
@@ -206,7 +244,7 @@
 						</b:Panel>
 					</b:Column>
 					
-<!-- 					LEFT MID PANEL -->
+<!-- 					RIGHT MID PANEL -->
 					<b:Column size = "SM_4">
 						<b:Panel type="DEFAULT" addStyleNames="{style.panelStyle}">
 						<b:PanelHeader addStyleNames="{style.panelHeaderStyle}">
@@ -219,63 +257,58 @@
 							<b:PanelBody>											
 								<b:MediaList>
 									<b:ListItem >
-										<b:Icon type="USER" pull="LEFT" size="TIMES3"/>
+										<b:Tooltip placement="BOTTOM">
+											<b:Icon type="PHONE" pull="LEFT" size="TIMES3" addStyleNames="{style.topUrgentActionIcon}" title="Make a personal call"/>
+										</b:Tooltip>
 										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
-											<b:Heading size="H4" text="Sundbyoster Skolefritidshjem" />
+											<b:Heading size="H4" text="Sundbyoster Skolefritidshjem" addStyleNames="{style.topUrgentMidPanelRowHeader}" />
 											<b:Heading size="H5" >
-												<b:Anchor text="Recommended Action: " addStyleNames="{style.noHoverOrLink}"/>
-												<b:Tooltip placement="BOTTOM">
-													<b:Anchor icon="PHONE" iconPosition="LEFT" title="Make a personal call" iconSize="LARGE" addStyleNames="{style.noHoverOrLink}"/>
-												</b:Tooltip>
+												<b:Anchor text="Low satisfaction on delivery" addStyleNames="{style.topUrgentMidPanelRowContent}"/>
 											</b:Heading>
 <!-- 											<b.html:Paragraph>Recommended action: Call</b.html:Paragraph> -->
 										</b:MediaBody>
 									</b:ListItem>
 									<b:ListItem >
-										<b:Icon type="USER" pull="LEFT" size="TIMES3"/>
+										<b:Tooltip placement="BOTTOM">
+											<b:Icon type="PHONE" pull="LEFT" size="TIMES3" addStyleNames="{style.topUrgentActionIcon}" title="Make a personal call"/>
+										</b:Tooltip>
 										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
-											<b:Heading size="H4" text="JNF Momentum Koge A/S" />
+											<b:Heading size="H4" text="JNF Momentum Koge A/S" addStyleNames="{style.topUrgentMidPanelRowHeader}"/>
 											<b:Heading size="H5" >
-												<b:Anchor text="Recommended Action: " addStyleNames="{style.noHoverOrLink}"/>
-												<b:Tooltip placement="BOTTOM">
-													<b:Anchor icon="PHONE" iconPosition="LEFT" title="Make a personal call" iconSize="LARGE" addStyleNames="{style.noHoverOrLink}"/>
-												</b:Tooltip>
+												<b:Anchor text="Website activity: QA-answer not helpful" addStyleNames="{style.topUrgentMidPanelRowContent}"/>
 											</b:Heading>
 										</b:MediaBody>
 									</b:ListItem>
 									<b:ListItem >
-										<b:Icon type="USER" pull="LEFT" size="TIMES3"/>
+										<b:Tooltip placement="BOTTOM">
+											<b:Icon type="PHONE" pull="LEFT" size="TIMES3" addStyleNames="{style.topUrgentActionIcon}" title="Make a personal call"/>
+										</b:Tooltip>
 										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
-											<b:Heading size="H4" text="Master International" />
+											<b:Heading size="H4" text="Master International" addStyleNames="{style.topUrgentMidPanelRowHeader}" />
 											<b:Heading size="H5" >
-												<b:Anchor text="Recommended Action: " addStyleNames="{style.noHoverOrLink}"/>
-												<b:Tooltip placement="BOTTOM">
-													<b:Anchor icon="PHONE" iconPosition="LEFT" title="Make a personal call" iconSize="LARGE" addStyleNames="{style.noHoverOrLink}"/>
-												</b:Tooltip>
+												<b:Anchor text="Financial: 50% drop in spending " addStyleNames="{style.topUrgentMidPanelRowContent}"/>
 											</b:Heading>
 										</b:MediaBody>
 									</b:ListItem>
 									<b:ListItem >
-										<b:Icon type="USER" pull="LEFT" size="TIMES3"/>
+										<b:Tooltip placement="BOTTOM">
+											<b:Icon type="PHONE" pull="LEFT" size="TIMES3" addStyleNames="{style.topUrgentActionIcon}" title="Make a personal call"/>
+										</b:Tooltip>
 										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
-											<b:Heading size="H4" text="Sydkystens Kranservice ApS" />
+											<b:Heading size="H4" text="Sydkystens Kranservice ApS" addStyleNames="{style.topUrgentMidPanelRowHeader}"/>
 											<b:Heading size="H5" >
-												<b:Anchor text="Recommended Action: " addStyleNames="{style.noHoverOrLink}"/>
-												<b:Tooltip placement="BOTTOM">
-													<b:Anchor icon="PHONE" iconPosition="LEFT" title="Make a personal call" iconSize="LARGE" addStyleNames="{style.noHoverOrLink}"/>
-												</b:Tooltip>
+												<b:Anchor text="Financial: 50% drop in spending" addStyleNames="{style.topUrgentMidPanelRowContent}"/>
 											</b:Heading>
 										</b:MediaBody>
 									</b:ListItem>
 									<b:ListItem >
-										<b:Icon type="USER" pull="LEFT" size="TIMES3"/>
+										<b:Tooltip placement="BOTTOM">
+											<b:Icon type="GIFT" pull="LEFT" size="TIMES3" addStyleNames="{style.topUrgentActionIcon}" title="Send a giftcard by Email"/>
+										</b:Tooltip>
 										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
-											<b:Heading size="H4" text="CF ApS" />
+											<b:Heading size="H4" text="CF ApS" addStyleNames="{style.topUrgentMidPanelRowHeader}" />
 											<b:Heading size="H5" >
-												<b:Anchor text="Recommended Action: " addStyleNames="{style.noHoverOrLink}"/>
-												<b:Tooltip placement="BOTTOM">
-													<b:Anchor icon="GIFT" iconPosition="LEFT" title="Send a giftcard by Email" iconSize="LARGE" addStyleNames="{style.noHoverOrLink}"/>
-												</b:Tooltip>
+												<b:Anchor text="LOMAX KvartalsBonus not used" addStyleNames="{style.topUrgentMidPanelRowContent}"/>
 											</b:Heading>	
 										</b:MediaBody>
 									</b:ListItem>									

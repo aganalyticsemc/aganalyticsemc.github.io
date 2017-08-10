@@ -15,94 +15,162 @@
 		</b:Row>	
 		
 <!-- 		Upper 3 info squares -->
+		<b:Row>
+			<b:Column size="SM_4">
+				<b:Well addStyleNames="{style.upperWell}">					
+					<b:Heading size="H5" alignment="CENTER">
+						<b:Anchor text="New Open Comments (past 7 days)" icon="WECHAT" iconSize="LARGE" addStyleNames="{style.headerUpperWell}"/>
+					</b:Heading>
+					<b:Heading size="H1" alignment="CENTER">
+						<b:Anchor text="15" addStyleNames="{style.textUpperWell}"/>
+					</b:Heading>
+				</b:Well>
+			</b:Column>
+			<b:Column size="SM_4">
+				<b:Well addStyleNames="{style.upperWell}">
+					<b:Heading size="H5" alignment="CENTER">
+						<b:Anchor text="Open Comments with less than 10 words" icon="MINUS" iconSize="LARGE" addStyleNames="{style.headerUpperWell}"/>
+					</b:Heading>
+					<b:Heading size="H1" alignment="CENTER">
+						<b:Anchor text="15" addStyleNames="{style.textUpperWell}"/>
+					</b:Heading>
+				</b:Well>
+			</b:Column>	
+			<b:Column size="SM_4">
+				<b:Well addStyleNames="{style.upperWell}">
+					<b:Heading size="H5" alignment="CENTER">
+						<b:Anchor text="Open Comments with more than 10 words" icon="NAVICON" iconSize="LARGE" addStyleNames="{style.headerUpperWell}"/>
+					</b:Heading>
+					<b:Heading size="H1" alignment="CENTER">
+						<b:Anchor text="15" addStyleNames="{style.textUpperWell}"/>
+					</b:Heading>
+				</b:Well>
+			</b:Column>										
+		</b:Row>
+
+<!-- 		Lower 3 info squares -->
+		<b:Row>
+			<b:Column size="SM_4">
+				<b:Well addStyleNames="{style.upperWell}">
+					<b:Heading size="H5" alignment="CENTER">
+						<b:Anchor text="Positive Comments" icon="SMILE_O" iconSize="LARGE" addStyleNames="{style.headerUpperWell}"/>
+					</b:Heading>
+					<b:Heading size="H1" alignment="CENTER">
+						<b:Anchor text="54 % " addStyleNames="{style.textUpperWell}"/>
+					</b:Heading>
+				</b:Well>
+			</b:Column>
+			<b:Column size="SM_4">
+				<b:Well addStyleNames="{style.upperWell}">
+					<b:Heading size="H5" alignment="CENTER">
+						<b:Anchor text="Neutral Comments" icon="MEH_O" iconSize="LARGE" addStyleNames="{style.headerUpperWell}"/>
+					</b:Heading>
+					<b:Heading size="H1" alignment="CENTER">
+						<b:Anchor text="26 %" addStyleNames="{style.textUpperWell}"/>
+					</b:Heading>
+				</b:Well>
+			</b:Column>	
+			<b:Column size="SM_4">
+				<b:Well addStyleNames="{style.upperWell}">
+					<b:Heading size="H5" alignment="CENTER">
+						<b:Anchor text="Negative Comments" icon="FROWN_O" iconSize="LARGE" addStyleNames="{style.headerUpperWell}"/>
+					</b:Heading>
+					<b:Heading size="H1" alignment="CENTER">
+						<b:Anchor text="20 %" addStyleNames="{style.textUpperWell}"/>
+					</b:Heading>
+				</b:Well>
+			</b:Column>										
+		</b:Row>		
+		
+<!-- 		Upper 3 info squares -->
 		<b:Row>		
 <!-- 		Square 1 -->
-			<b:Column size="SM_4">
-				<b:Well addStyleNames="{style.upperWell}">
-					<b:Row addStyleNames="{style.insideWell}">
-					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}">
-						<b:Icon type="WECHAT" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" />
-					</b:Column>
-					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}">
-						<b:Heading size="H1" alignment="CENTER" text="15"/>
-						<b:Heading size="H5" alignment="CENTER" text="Open Comments the past 7 days"/>
-					</b:Column>
-					</b:Row>
-				</b:Well>				
-			</b:Column>
+<!-- 			<b:Column size="SM_4"> -->
+<!-- 				<b:Well addStyleNames="{style.upperWell}"> -->
+<!-- 					<b:Row addStyleNames="{style.insideWell}"> -->
+<!-- 					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}"> -->
+<!-- 						<b:Icon type="WECHAT" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" /> -->
+<!-- 					</b:Column> -->
+<!-- 					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}"> -->
+<!-- 						<b:Heading size="H1" alignment="CENTER" text="15"/> -->
+<!-- 						<b:Heading size="H5" alignment="CENTER" text="Open Comments the past 7 days"/> -->
+<!-- 					</b:Column> -->
+<!-- 					</b:Row> -->
+<!-- 				</b:Well>				 -->
+<!-- 			</b:Column> -->
 <!-- 		Square 2 -->			
-			<b:Column size="SM_4">
-				<b:Well addStyleNames="{style.upperWell}">
-					<b:Row addStyleNames="{style.insideWell}">
-					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}">
-						<b:Icon type="MINUS" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" />
-					</b:Column>
-					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}">
-						<b:Heading size="H1" alignment="CENTER" text="77 %"/>
-						<b:Heading size="H5" alignment="CENTER" text="Comments with less than 10 words"/>
-					</b:Column>
-					</b:Row>
-				</b:Well>				
-			</b:Column>	
+<!-- 			<b:Column size="SM_4"> -->
+<!-- 				<b:Well addStyleNames="{style.upperWell}"> -->
+<!-- 					<b:Row addStyleNames="{style.insideWell}"> -->
+<!-- 					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}"> -->
+<!-- 						<b:Icon type="MINUS" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" /> -->
+<!-- 					</b:Column> -->
+<!-- 					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}"> -->
+<!-- 						<b:Heading size="H1" alignment="CENTER" text="77 %"/> -->
+<!-- 						<b:Heading size="H5" alignment="CENTER" text="Comments with less than 10 words"/> -->
+<!-- 					</b:Column> -->
+<!-- 					</b:Row> -->
+<!-- 				</b:Well>				 -->
+<!-- 			</b:Column>	 -->
 <!-- 		Square 3 -->			
-			<b:Column size="SM_4">
-				<b:Well addStyleNames="{style.upperWell}">
-					<b:Row addStyleNames="{style.insideWell}">
-					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}">
-						<b:Icon type="NAVICON" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" />
-					</b:Column>
-					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}">
-						<b:Heading size="H1" alignment="CENTER" text="23 %"/>
-						<b:Heading size="H5" alignment="CENTER" text="Comments with more than 10 words"/>
-					</b:Column>
-					</b:Row>
-				</b:Well>				
-			</b:Column>							
+<!-- 			<b:Column size="SM_4"> -->
+<!-- 				<b:Well addStyleNames="{style.upperWell}"> -->
+<!-- 					<b:Row addStyleNames="{style.insideWell}"> -->
+<!-- 					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}"> -->
+<!-- 						<b:Icon type="NAVICON" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" /> -->
+<!-- 					</b:Column> -->
+<!-- 					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}"> -->
+<!-- 						<b:Heading size="H1" alignment="CENTER" text="23 %"/> -->
+<!-- 						<b:Heading size="H5" alignment="CENTER" text="Comments with more than 10 words"/> -->
+<!-- 					</b:Column> -->
+<!-- 					</b:Row> -->
+<!-- 				</b:Well>				 -->
+<!-- 			</b:Column>							 -->
 		</b:Row>
 	<!-- 		Lower 3 info squares -->
 		<b:Row>		
 <!-- 		Square 4 -->
-			<b:Column size="SM_4">
-				<b:Well addStyleNames="{style.upperWell}">
-					<b:Row addStyleNames="{style.insideWell}">
-					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}">
-						<b:Icon type="SMILE_O" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" />
-					</b:Column>
-					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}">
-						<b:Heading size="H1" alignment="CENTER" text="54 % "/>
-						<b:Heading size="H5" alignment="CENTER" text="Positive Comments"/>
-					</b:Column>
-					</b:Row>
-				</b:Well>				
-			</b:Column>
+<!-- 			<b:Column size="SM_4"> -->
+<!-- 				<b:Well addStyleNames="{style.upperWell}"> -->
+<!-- 					<b:Row addStyleNames="{style.insideWell}"> -->
+<!-- 					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}"> -->
+<!-- 						<b:Icon type="SMILE_O" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" /> -->
+<!-- 					</b:Column> -->
+<!-- 					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}"> -->
+<!-- 						<b:Heading size="H1" alignment="CENTER" text="54 % "/> -->
+<!-- 						<b:Heading size="H5" alignment="CENTER" text="Positive Comments"/> -->
+<!-- 					</b:Column> -->
+<!-- 					</b:Row> -->
+<!-- 				</b:Well>				 -->
+<!-- 			</b:Column> -->
 <!-- 		Square 5 -->			
-			<b:Column size="SM_4">
-				<b:Well addStyleNames="{style.upperWell}">
-					<b:Row addStyleNames="{style.insideWell}">
-					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}">
-						<b:Icon type="MEH_O" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" />
-					</b:Column>
-					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}">
-						<b:Heading size="H1" alignment="CENTER" text="26 %"/>
-						<b:Heading size="H5" alignment="CENTER" text="Neutral Comments"/>
-					</b:Column>
-					</b:Row>
-				</b:Well>				
-			</b:Column>	
+<!-- 			<b:Column size="SM_4"> -->
+<!-- 				<b:Well addStyleNames="{style.upperWell}"> -->
+<!-- 					<b:Row addStyleNames="{style.insideWell}"> -->
+<!-- 					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}"> -->
+<!-- 						<b:Icon type="MEH_O" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" /> -->
+<!-- 					</b:Column> -->
+<!-- 					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}"> -->
+<!-- 						<b:Heading size="H1" alignment="CENTER" text="26 %"/> -->
+<!-- 						<b:Heading size="H5" alignment="CENTER" text="Neutral Comments"/> -->
+<!-- 					</b:Column> -->
+<!-- 					</b:Row> -->
+<!-- 				</b:Well>				 -->
+<!-- 			</b:Column>	 -->
 <!-- 		Square 6 -->			
-			<b:Column size="SM_4">
-				<b:Well addStyleNames="{style.upperWell}">
-					<b:Row addStyleNames="{style.insideWell}">
-					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}">
-						<b:Icon type="FROWN_O" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" />
-					</b:Column>
-					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}">
-						<b:Heading size="H1" alignment="CENTER" text="20 %"/>
-						<b:Heading size="H5" alignment="CENTER" text="Negative Comments"/>
-					</b:Column>
-					</b:Row>
-				</b:Well>				
-			</b:Column>							
+<!-- 			<b:Column size="SM_4"> -->
+<!-- 				<b:Well addStyleNames="{style.upperWell}"> -->
+<!-- 					<b:Row addStyleNames="{style.insideWell}"> -->
+<!-- 					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}"> -->
+<!-- 						<b:Icon type="FROWN_O" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" /> -->
+<!-- 					</b:Column> -->
+<!-- 					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}"> -->
+<!-- 						<b:Heading size="H1" alignment="CENTER" text="20 %"/> -->
+<!-- 						<b:Heading size="H5" alignment="CENTER" text="Negative Comments"/> -->
+<!-- 					</b:Column> -->
+<!-- 					</b:Row> -->
+<!-- 				</b:Well>				 -->
+<!-- 			</b:Column>							 -->
 		</b:Row>
 		
 		

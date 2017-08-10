@@ -22,27 +22,9 @@
 						<b:AnchorListItem active="true" text= "All Alerts"/>
 						<b:AnchorListItem badgeText="3" text= "New Alerts" enabled="false"/>
 						<b:AnchorListItem badgeText="7" text= "Urgent" enabled="false"/>
-<!-- 							<b:ListDropDown> -->
-<!-- 								<b:AnchorButton active="true" dataToggle="DROPDOWN" text="Attention Level"/> -->
-<!-- 									<b:DropDownMenu> -->
-<!-- 										<b:AnchorListItem>Urgent</b:AnchorListItem> -->
-<!-- 										<b:AnchorListItem>High</b:AnchorListItem> -->
-<!-- 										<b:AnchorListItem>Low</b:AnchorListItem> -->
-<!-- 									</b:DropDownMenu>								 -->
-<!-- 							</b:ListDropDown> -->
-<!-- 							<b:ListDropDown> -->
-<!-- 								<b:AnchorButton dataToggle="DROPDOWN" text="Segment"/> -->
-<!-- 									<b:DropDownMenu> -->
-<!-- 										<b:AnchorListItem>Primary</b:AnchorListItem> -->
-<!-- 										<b:AnchorListItem>Secondary</b:AnchorListItem> -->
-<!-- 										<b:AnchorListItem>Tertiary</b:AnchorListItem> -->
-<!-- 									</b:DropDownMenu>								 -->
-<!-- 							</b:ListDropDown> -->
 							<b:Tooltip title="Get Excel Report" placement="BOTTOM"><b:AnchorListItem icon="FILE_EXCEL_O" pull="RIGHT"/></b:Tooltip>
 							<b:Tooltip title="Get .Pdf Report" placement="BOTTOM"><b:AnchorListItem icon="FILE_PDF_O" pull="RIGHT"/></b:Tooltip>
 							<b:Tooltip title="Print Report" placement="BOTTOM"><b:AnchorListItem icon="PRINT" pull="RIGHT"/></b:Tooltip>
-<!-- 							<b:AnchorListItem icon="PRINT" pull="RIGHT"/> -->
-<!-- 							<b:AnchorListItem icon="FILE_PDF_O" pull="RIGHT"/> -->
 						    <b:NavbarForm pull="RIGHT">
 						      <b:TextBox placeholder="Search Company Name..."/>
 						    </b:NavbarForm>
