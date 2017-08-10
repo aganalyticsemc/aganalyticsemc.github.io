@@ -1,9 +1,0 @@
-@CHARSET "ISO-8859-1";
-
-.menuItemActive{
-	border-bottom:2px solid white;
-}
-
-.menuItemInActive{
-	border-bottom:0px solid white;
-}
