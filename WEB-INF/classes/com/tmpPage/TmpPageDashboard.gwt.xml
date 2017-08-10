@@ -17,9 +17,10 @@
   <!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
   <!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>     -->
 
-  <!-- Other module inherits                                      -->
+  Other module inherits                
+  <inherits name="org.moxieapps.gwt.highcharts.Highcharts"/>
   <inherits name="org.gwtbootstrap3.GwtBootstrap3Theme"/>                             
-  
+<!--   <inherits name="org.moxieapps.gwt.highcharts.Highcharts"/> -->
   
 <!--  <inherits name="com.google.gwt.libideas.StyleInjector"/> -->
   <!-- Specify the app entry point class.                         -->
@@ -35,9 +36,10 @@
 <!--   Customized bootstrap CSS-file. Is injected after the gwtbootstrap3 CSS-files -->
   <stylesheet src="bootstrap.css"/>
   <stylesheet src="bootstrap-theme.css"/>
-<!--   Custom CSS for table of alerts -->
+<!--   Custom CSS for table of alerts (used by the simpleTable.java )-->
   <stylesheet src="tableStyle.css"/> 
-
+<!--   Custom CSS for the navbar (used by navbarViewer.java) -->
+  <stylesheet src="navBarStyle.css"/> 
   
 
 

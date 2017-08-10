@@ -23,10 +23,11 @@
 				<b:Row addStyleNames="{style.subNavBar}">
 					<b:Column size="LG_12,MD_12" addStyleNames="{style.subMenuItem}">
 							<b:NavbarNav>
-								<b:AnchorListItem icon="HOME" text="Overview" enabled="false"/>
-								<b:AnchorListItem icon="DASHBOARD" text="Ranking" enabled="false"/>
+								<b:AnchorListItem icon="DASHBOARD" text="Overview" enabled="false"/>
+								<b:AnchorListItem icon="TROPHY" text="Ranking" enabled="false"/>
 								<b:AnchorListItem icon="BAR_CHART" text="Drivers" enabled="false"/>
-								<b:AnchorListItem icon="WARNING" text="Alerts" addStyleNames="{style.menuItemActive}"/>
+								<b:AnchorListItem ui:field="alertTab" icon="WARNING" text="Alerts" />
+								<b:AnchorListItem ui:field="textAnalyticTab" icon="WECHAT" text="Text Analytics" />
 <!-- 								<b:ListDropDown> -->
 <!-- 									<b:AnchorButton dataToggle="DROPDOWN" icon="WARNING" text="Alerts" /> -->
 <!-- 									<b:DropDownMenu addStyleNames="{style.dropMenuNavBar}"> -->

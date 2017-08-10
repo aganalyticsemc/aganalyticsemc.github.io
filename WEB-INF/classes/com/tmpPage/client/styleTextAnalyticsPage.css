@@ -1,0 +1,118 @@
+@CHARSET "ISO-8859-1";
+
+
+
+.rectangle-list a{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em .8em;
+    *padding: .4em;
+    margin: .5em 0 .5em 2.5em;
+    background: rgba(0,0,0,0.3) !important;
+    color: rgba(0,0,0,0.7) !important;
+    text-decoration: none;
+    transition: all .3s ease-out;   
+}
+
+.rectangle-list a:hover{
+    background: #eee;
+}   
+
+.rectangle-list a:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute; 
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #48baff;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.rectangle-list a:after{
+    position: absolute; 
+    content: '';
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;               
+}
+
+.rectangle-list a:hover:after{
+    left: -.5em;
+    border-left-color:  #48baff;             
+}   
+
+
+.listNumberStyle{
+	background:#48baff;
+	color:white;
+	border:0px solid white;
+	border-radius: 0px;	
+}
+
+.listNumberStyleCol{
+
+}
+
+.input-group-number{
+/*     max-width:10px; */
+    text-align:left;
+	background:#48baff;
+	color:white;
+	border:0px;
+	border-radius:0px;
+	font-size:18px;
+	font-weight:bold;
+	margin-top:20px;
+}
+
+.input-group-blank{
+	background:white;
+	border:0px;
+/* 	border-right:1px solid black; */
+	width:1px;
+	padding:3px;
+}
+
+.input-group-sentence{
+	background:white;
+	border:0px;
+	width:100%;
+	border:0px solid black;
+	border-radius:0px;
+	font-size:18px;
+	background:rgba(0,0,0,0.05);
+	 text-align:left;
+	 font-weight:bold;
+	 overflow: auto;
+}
+
+.input-group-sentence:hover{
+	cursor:default;
+	
+}
+
+.input-group{
+	margin-bottom:5px;
+/* 	border:1px solid rgba(0,0,0,0.2); */
+/* 	border-radius:4px; */
+}
+
+.topSentencesHeader{
+	margin-bottom:30px;
+	
+}
+
+.wordCloudImage{
+	height:60%;
+/* 	display:block; */
+	margin:0 auto;
+
+}
+
