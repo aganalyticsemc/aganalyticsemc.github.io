@@ -1,0 +1,18 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<g:HTMLPanel>
+		<div class="centeringDiv">
+		  <div class="sk-folding-cube">	
+			  <div class="sk-cube1 sk-cube"></div>
+			  <div class="sk-cube2 sk-cube"></div>
+			  <div class="sk-cube4 sk-cube"></div>
+			  <div class="sk-cube3 sk-cube"></div>
+		  </div>
+		  <div class="loadingText">
+		  Loading CEM Dashboard
+		  </div>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

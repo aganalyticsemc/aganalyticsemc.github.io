@@ -40,6 +40,8 @@
   <stylesheet src="tableStyle.css"/> 
 <!--   Custom CSS for the navbar (used by navbarViewer.java) -->
   <stylesheet src="navBarStyle.css"/> 
+<!--   Custom CSS for the login page(used by navbarViewer.java) -->
+  <stylesheet src="styleLoginPage.css"/>   
   
 
 

@@ -10,7 +10,7 @@
 <!-- PAGE TITLE -->
 		<b:Row addStyleNames="{style.column}">
 			<b:Column size = "SM_12">
-				<b:Heading size="H1" alignment="LEFT" text="Alert List"/>
+				<b:Heading size="H1" alignment="LEFT" text="Hot Alerts Overview"/>
 			</b:Column> 
 		</b:Row>	
 		
@@ -18,7 +18,7 @@
 			<b:Column size="SM_3">
 				<b:Well addStyleNames="{style.upperWell}">
 					<b:Heading size="H5" alignment="CENTER">
-						<b:Anchor text="New Alerts (past 7 days)" icon="FLAG" iconSize="LARGE" addStyleNames="{style.headerUpperWell}"/>
+						<b:Anchor text="New Hot Alerts" icon="FLAG" iconSize="LARGE" addStyleNames="{style.headerUpperWell}"/>
 					</b:Heading>
 					<b:Heading size="H1" alignment="CENTER">
 						<b:Anchor text="3" addStyleNames="{style.textUpperWell}"/>
@@ -28,30 +28,30 @@
 			<b:Column size="SM_3">
 				<b:Well addStyleNames="{style.upperWell}">
 					<b:Heading size="H5" alignment="CENTER">
-						<b:Anchor text="Unhandled Alerts" icon="WARNING" iconSize="LARGE" addStyleNames="{style.headerUpperWell}"/>
+						<b:Anchor text="Unhandled Hot Alerts" icon="WARNING" iconSize="LARGE" addStyleNames="{style.headerUpperWell}"/>
 					</b:Heading>
 					<b:Heading size="H1" alignment="CENTER">
-						<b:Anchor text="11" addStyleNames="{style.textUpperWell}"/>
+						<b:Anchor text="4" addStyleNames="{style.textUpperWell}"/>
 					</b:Heading>
 				</b:Well>
 			</b:Column>
 			<b:Column size="SM_3">
 				<b:Well addStyleNames="{style.upperWell}">
 					<b:Heading size="H5" alignment="CENTER">
-						<b:Anchor text="Alerts Handled (past 7 days)" icon="CHECK" iconSize="LARGE" addStyleNames="{style.headerUpperWell}"/>
+						<b:Anchor text="Hot Alerts Handled" icon="CHECK" iconSize="LARGE" addStyleNames="{style.headerUpperWell}"/>
 					</b:Heading>
 					<b:Heading size="H1" alignment="CENTER">
-						<b:Anchor text="3" addStyleNames="{style.textUpperWell}"/>
+						<b:Anchor text="1" addStyleNames="{style.textUpperWell}"/>
 					</b:Heading>
 				</b:Well>
 			</b:Column>
 			<b:Column size="SM_3">
 				<b:Well addStyleNames="{style.upperWell}">
 					<b:Heading size="H5" alignment="CENTER">
-						<b:Anchor text="Customers Retained (past 30 days)" icon="THUMBS_UP" iconSize="LARGE" addStyleNames="{style.headerUpperWell}"/>
+						<b:Anchor text="Hot Alerts handled in time (max 48h)" icon="THUMBS_UP" iconSize="LARGE" addStyleNames="{style.headerUpperWell}"/>
 					</b:Heading>
 					<b:Heading size="H1" alignment="CENTER">
-						<b:Anchor text="51" addStyleNames="{style.textUpperWell}"/>
+						<b:Anchor text="100%" addStyleNames="{style.textUpperWell}"/>
 					</b:Heading>
 				</b:Well>
 			</b:Column>											
@@ -211,25 +211,25 @@
 										<b:TabListItem text="Annually" ui:field="AnnuallyTarget" addStyleNames="{style.panelBreadcrumbsItem}"/>
 									</b:NavTabs>								
 								</b:Row >								
-									<b:Heading size="H5" text="Customer Retained" addStyleNames="{style.noHoverOrLink}">					
+									<b:Heading size="H5" text="Leads Contacted" addStyleNames="{style.noHoverOrLink}">					
 									  <b:Anchor text="15 / 15" pull="RIGHT" icon="CHECK" iconPosition="RIGHT" addStyleNames="{style.noHoverOrLink}" ui:field="targetBar1Text"/>
 									</b:Heading>
 									<b:Progress>								
 										<b:ProgressBar type="SUCCESS" percent="100" ui:field="targetBar1"/>										
 									</b:Progress>															
-									<b:Heading size="H5" text="Alerts Handled" addStyleNames="{style.noHoverOrLink}" >
+									<b:Heading size="H5" text="Leasing/Warranty Alerts Handled" addStyleNames="{style.noHoverOrLink}" >
 										<b:Anchor  text="17 / 20" pull="RIGHT" addStyleNames="{style.noHoverOrLink}" ui:field="targetBar2Text"/>
 									</b:Heading>
 									<b:Progress>								
 										<b:ProgressBar type="SUCCESS" percent="85" ui:field="targetBar2"/>
 									</b:Progress>
-									<b:Heading size="H5" text="Urgent Alerts Handled" addStyleNames="{style.noHoverOrLink}" >
+									<b:Heading size="H5" text="Customer Complaints Handled" addStyleNames="{style.noHoverOrLink}" >
 									  <b:Anchor text="2 / 10" pull="RIGHT"  addStyleNames="{style.noHoverOrLink}" ui:field="targetBar3Text"/>
 									</b:Heading>
 									<b:Progress>								
 										<b:ProgressBar type="WARNING" percent="25" ui:field="targetBar3"/>
 									</b:Progress>
-									<b:Heading size="H5" text="High Attention Alert Handled" addStyleNames="{style.noHoverOrLink}" >
+									<b:Heading size="H5" text="CEM Hot Alerts handled" addStyleNames="{style.noHoverOrLink}" >
 										<b:Anchor text="1 / 5" pull="RIGHT" icon="WARNING" iconPosition="RIGHT" addStyleNames="{style.noHoverOrLink}" ui:field="targetBar4Text"/>	
 									</b:Heading>
 								<b:Progress>								
@@ -261,9 +261,9 @@
 											<b:Icon type="PHONE" pull="LEFT" size="TIMES3" addStyleNames="{style.topUrgentActionIcon}" title="Make a personal call"/>
 										</b:Tooltip>
 										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
-											<b:Heading size="H4" text="Sundbyoster Skolefritidshjem" addStyleNames="{style.topUrgentMidPanelRowHeader}" />
+											<b:Heading size="H4" text="Bjarne Petsch (AG45678)" addStyleNames="{style.topUrgentMidPanelRowHeader}" />
 											<b:Heading size="H5" >
-												<b:Anchor text="Low satisfaction on delivery" addStyleNames="{style.topUrgentMidPanelRowContent}"/>
+												<b:Anchor text="CEM Hot Alert (★★✰✰✰)" addStyleNames="{style.topUrgentMidPanelRowContent}"/>
 											</b:Heading>
 <!-- 											<b.html:Paragraph>Recommended action: Call</b.html:Paragraph> -->
 										</b:MediaBody>
@@ -273,9 +273,9 @@
 											<b:Icon type="PHONE" pull="LEFT" size="TIMES3" addStyleNames="{style.topUrgentActionIcon}" title="Make a personal call"/>
 										</b:Tooltip>
 										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
-											<b:Heading size="H4" text="JNF Momentum Koge A/S" addStyleNames="{style.topUrgentMidPanelRowHeader}"/>
+											<b:Heading size="H4" text="Freddy Gregersen (AG12345)" addStyleNames="{style.topUrgentMidPanelRowHeader}"/>
 											<b:Heading size="H5" >
-												<b:Anchor text="Website activity: QA-answer not helpful" addStyleNames="{style.topUrgentMidPanelRowContent}"/>
+												<b:Anchor text="Customer Complaint (Source: Email)" addStyleNames="{style.topUrgentMidPanelRowContent}"/>
 											</b:Heading>
 										</b:MediaBody>
 									</b:ListItem>
@@ -284,9 +284,9 @@
 											<b:Icon type="PHONE" pull="LEFT" size="TIMES3" addStyleNames="{style.topUrgentActionIcon}" title="Make a personal call"/>
 										</b:Tooltip>
 										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
-											<b:Heading size="H4" text="Master International" addStyleNames="{style.topUrgentMidPanelRowHeader}" />
+											<b:Heading size="H4" text="Benny Pedersen (AG98765)" addStyleNames="{style.topUrgentMidPanelRowHeader}" />
 											<b:Heading size="H5" >
-												<b:Anchor text="Financial: 50% drop in spending " addStyleNames="{style.topUrgentMidPanelRowContent}"/>
+												<b:Anchor text="Warranty expires 18/08/2018" addStyleNames="{style.topUrgentMidPanelRowContent}"/>
 											</b:Heading>
 										</b:MediaBody>
 									</b:ListItem>
@@ -295,20 +295,20 @@
 											<b:Icon type="PHONE" pull="LEFT" size="TIMES3" addStyleNames="{style.topUrgentActionIcon}" title="Make a personal call"/>
 										</b:Tooltip>
 										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
-											<b:Heading size="H4" text="Sydkystens Kranservice ApS" addStyleNames="{style.topUrgentMidPanelRowHeader}"/>
+											<b:Heading size="H4" text="Karsten Andersen (AG34215)" addStyleNames="{style.topUrgentMidPanelRowHeader}"/>
 											<b:Heading size="H5" >
-												<b:Anchor text="Financial: 50% drop in spending" addStyleNames="{style.topUrgentMidPanelRowContent}"/>
+												<b:Anchor text="Leasing contract expires 01/08/2018" addStyleNames="{style.topUrgentMidPanelRowContent}"/>
 											</b:Heading>
 										</b:MediaBody>
 									</b:ListItem>
 									<b:ListItem >
 										<b:Tooltip placement="BOTTOM">
-											<b:Icon type="GIFT" pull="LEFT" size="TIMES3" addStyleNames="{style.topUrgentActionIcon}" title="Send a giftcard by Email"/>
+											<b:Icon type="PHONE" pull="LEFT" size="TIMES3" addStyleNames="{style.topUrgentActionIcon}" title="Send a personal call"/>
 										</b:Tooltip>
 										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
-											<b:Heading size="H4" text="CF ApS" addStyleNames="{style.topUrgentMidPanelRowHeader}" />
+											<b:Heading size="H4" text="Rasmus Mols Madsen (AG34215)" addStyleNames="{style.topUrgentMidPanelRowHeader}" />
 											<b:Heading size="H5" >
-												<b:Anchor text="LOMAX KvartalsBonus not used" addStyleNames="{style.topUrgentMidPanelRowContent}"/>
+												<b:Anchor text="No workshop visit within 18 months" addStyleNames="{style.topUrgentMidPanelRowContent}"/>
 											</b:Heading>	
 										</b:MediaBody>
 									</b:ListItem>									
